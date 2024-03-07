@@ -2,9 +2,9 @@ import React from "react";
 
 const Content = () =>{
     let value = [
-        {'name':'Ansar','DOB':'31-01'},
-        {'name':'Agash','DOB':'01-01'},
-        {'name':'Pari','DOB':'21-01'},
+        {'name':'Ansar','DOB':'31-01','age':24},
+        {'name':'Agash','DOB':'01-01','age':28},
+        {'name':'Pari','DOB':'21-01','age':32},
         
 ];
 
@@ -24,6 +24,7 @@ return(
             <div className="box" style={boxColor}>
                 <p><label htmlFor="name">Name : {val.name}</label></p>
                 <p><label htmlFor="DOB">DOB : {val.DOB}</label></p>
+                <p><label htmlFor="AGE">Age : {val.age}</label></p>
             </div>
             </div>
         ))}
